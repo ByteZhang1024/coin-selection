@@ -17,6 +17,9 @@
   },
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
+  "browser": {
+    "@emurgo/cardano-serialization-lib-nodejs": "@emurgo/cardano-serialization-lib-browser"
+  },
   "files": [
     "lib/**/*.js",
     "lib/**/*.ts"
@@ -32,7 +35,6 @@
     "test:badges": "make-coverage-badge --output-path ./docs/badge-coverage.svg"
   },
   "devDependencies": {
-    "@emurgo/cardano-serialization-lib-nodejs": "11.0.0",
     "@swc-node/jest": "^1.5.2",
     "@types/jest": "^28.1.6",
     "@types/node": "^16.3.2",
@@ -52,7 +54,7 @@
   },
   "dependencies": {
     "@emurgo/cardano-message-signing-asmjs": "^1.0.1",
-    "@emurgo/cardano-serialization-lib-asmjs": "11.1.0"
+    "@emurgo/cardano-serialization-lib-asmjs": "11.5.0"
   },
   "peerDependencies": {
     "bignumber.js": "^9.0.1"
